@@ -1,13 +1,20 @@
-use actix_web::{web, App, Error, HttpRequest, HttpResponse, Responder, HttpServer};
-use serde::Serialize;
+use actix_web::{App, Error, get, HttpRequest, HttpResponse, HttpServer, post, Responder, web};
 use futures::future::{ready, Ready};
+use serde::{Deserialize, Serialize};
 
 #[derive(Serialize)]
-struct BaseResponseDocument {
-    name: &'static str,
+struct UserResponseDocument {
+    id: &'static u32,
+    username: &'static str,
 }
 
-impl Responder for BaseResponseDocument {
+#[derive(Deserialize)]
+struct SearchRequestDocument {
+    id: u32,
+    username: String,
+}
+
+impl Responder for UserResponseDocument {
     type Error = Error;
     type Future = Ready<Result<HttpResponse, Error>>;
 
@@ -20,8 +27,26 @@ impl Responder for BaseResponseDocument {
     }
 }
 
+async fn user() -> impl Responder {
+    let id: &u32 = &12354;
+    let username: &str = "Stefano";
+
+    UserResponseDocument {
+        id,
+        username,
+    }
+}
+
+#[post("/search/{foo}/{bar}")]
+async fn search(web::Path((foo, bar)): web::Path<(String, String)>,
+                json: web::Json<SearchRequestDocument>,
+) -> impl Responder {
+    format!("id: {} | name: {} | foo: {} | bar: {}", json.id, json.username, foo, bar)
+}
+
+#[get("/")]
 async fn index() -> impl Responder {
-    BaseResponseDocument { name: "Stefano" }
+    HttpResponse::Ok().body("Hello world!")
 }
 
 #[actix_web::main]
@@ -29,7 +54,9 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new().service(
             web::scope("/api")
-                .route("/user", web::get().to(index)),
+                .service(index)
+                .service(search)
+                .route("/user", web::get().to(user)),
         )
     })
         .bind("127.0.0.1:8080")?
