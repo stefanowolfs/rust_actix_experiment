@@ -22,7 +22,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1486864-eca0-47f8-83a2-4bf4ad1e451a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +56,32 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Cargo.toml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="Ignore Files Support" />
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package todos --bin todos" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo Command.run" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,7 +92,9 @@
       <option name="presentableId" value="Default" />
       <updated>1599774340325</updated>
       <workItem from="1599774342722" duration="51000" />
-      <workItem from="1599774394798" duration="40000" />
+      <workItem from="1599774394798" duration="3582000" />
+      <workItem from="1600032719213" duration="8778000" />
+      <workItem from="1600047796983" duration="195000" />
     </task>
     <servers />
   </component>
@@ -83,14 +111,59 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2041" y="355" width="559" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600036632987">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2041" y="355" width="559" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600036632987" />
     <state x="2109" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599774383008">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2109" y="311" width="424" height="491" key="FileChooserDialogImpl/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1599774383008" />
+    <state width="1874" height="274" key="GridCell.Tab.0.bottom" timestamp="1600047531021">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.bottom/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600047531021" />
+    <state width="1874" height="274" key="GridCell.Tab.0.center" timestamp="1600047531021">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.center/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600047531021" />
+    <state width="1874" height="274" key="GridCell.Tab.0.left" timestamp="1600047531021">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.left/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600047531021" />
+    <state width="1874" height="274" key="GridCell.Tab.0.right" timestamp="1600047531021">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.right/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600047531021" />
+    <state width="1874" height="339" key="GridCell.Tab.1.bottom" timestamp="1599794609338">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="339" key="GridCell.Tab.1.bottom/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1599794609338" />
+    <state width="1874" height="339" key="GridCell.Tab.1.center" timestamp="1599794609338">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="339" key="GridCell.Tab.1.center/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1599794609338" />
+    <state width="1874" height="339" key="GridCell.Tab.1.left" timestamp="1599794609338">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="339" key="GridCell.Tab.1.left/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1599794609338" />
+    <state width="1874" height="339" key="GridCell.Tab.1.right" timestamp="1599794609338">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="339" key="GridCell.Tab.1.right/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1599794609338" />
+    <state x="1815" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1600047919792">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1815" y="188" width="1022" height="737" key="SettingsEditor/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600047919792" />
+    <state x="1989" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1600045485105">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="259" width="672" height="678" key="search.everywhere.popup/1366.0.1920.1080/0.164.1366.768@1366.0.1920.1080" timestamp="1600045485105" />
   </component>
 </project>
