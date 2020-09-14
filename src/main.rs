@@ -1,4 +1,7 @@
+use std::env;
+
 use actix_web::{App, Error, get, HttpRequest, HttpResponse, HttpServer, post, Responder, web};
+use dotenv::dotenv;
 use futures::future::{ready, Ready};
 use serde::{Deserialize, Serialize};
 
@@ -51,6 +54,9 @@ async fn index() -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    dotenv().ok();
+    let server_url = env::var("SERVER_URL").expect("SERVER_URL is not set in .env file");
+
     HttpServer::new(|| {
         App::new().service(
             web::scope("/api")
@@ -59,7 +65,7 @@ async fn main() -> std::io::Result<()> {
                 .route("/user", web::get().to(user)),
         )
     })
-        .bind("127.0.0.1:8080")?
+        .bind(server_url)?
         .run()
         .await
 }
