@@ -1,7 +1,7 @@
 /target
-.idea
 .env
+.idea
 .iws
+.lock
 workspace.xml
 tasks.xml
-Cargo.lock
